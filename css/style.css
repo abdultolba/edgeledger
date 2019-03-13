@@ -96,6 +96,11 @@ p {
     color: #fff;
 }
 
+.bg-primary {
+    background: #93cb52;
+    color: #fff;
+}
+
 .py-1 { padding: 1.5rem 0; }
 .py-2 { padding: 2rem 0; }
 .py-3 { padding: 3rem 0; }
@@ -110,6 +115,7 @@ p {
 
 #navbar {
     display: flex;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     background: #333;
@@ -154,7 +160,7 @@ p {
     padding: 0 2rem;
     /* Overlay */
     position: absolute;
-    top: 60px;
+    top: 65px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -205,5 +211,31 @@ p {
     margin: auto;
     width: 60%;
 }
+
+/* Contact */
+
+#contact {
+    display: flex;
+}
+
+#contact .map, 
+#contact .contact-form {
+    flex: 1;
+}
+
+#contact .contact-form .form-group {
+    margin: 0.75rem;
+}
+#contact .contact-form .form-group label {
+    display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+
 
 
